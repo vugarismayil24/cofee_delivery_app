@@ -1,0 +1,718 @@
+{
+    "cappucino":[
+        {
+          "title": "Classic",
+          "subTitle": "Rich & Frothy",
+          "description": "Enjoy the perfect balance of espresso, steamed milk, and foam in every sip.",
+          "imageUrl": "https://source.unsplash.com/600x600/?cappuccino",
+          "price": 3.99,
+          "rating": 4.5,
+          "voteCount": 120,
+          "isLiked": true
+        },
+        {
+          "title": "Vanilla",
+          "subTitle": "Sweet & Creamy",
+          "description": "Experience the smooth and creamy flavor of vanilla blended with espresso and frothed milk.",
+          "imageUrl": "https://source.unsplash.com/600x600/?cappuccino",
+          "price": 4.49,
+          "rating": 4.7,
+          "voteCount": 95,
+          "isLiked": false
+        },
+        {
+          "title": "Caramel",
+          "subTitle": "Buttery & Rich",
+          "description": "Indulge in the rich and buttery taste of caramel combined with espresso and foamed milk.",
+          "imageUrl": "https://source.unsplash.com/600x600/?cappuccino",
+          "price": 4.79,
+          "rating": 4.6,
+          "voteCount": 110,
+          "isLiked": true
+        },
+        {
+          "title": "Hazelnut",
+          "subTitle": "Nutty & Delicious",
+          "description": "Savor the nutty aroma and flavor of hazelnut in this delightful cappuccino.",
+          "imageUrl": "https://source.unsplash.com/600x600/?cappuccino",
+          "price": 4.99,
+          "rating": 4.4,
+          "voteCount": 85,
+          "isLiked": false
+        },
+        {
+          "title": "Mocha",
+          "subTitle": "Chocolaty Indulgence",
+          "description": "Indulge in the rich chocolate flavor of mocha combined with creamy cappuccino foam.",
+          "imageUrl": "https://source.unsplash.com/600x600/?cappuccino",
+          "price": 5.29,
+          "rating": 4.3,
+          "voteCount": 100,
+          "isLiked": true
+        },
+        {
+          "title": "Coconut",
+          "subTitle": "Tropical Delight",
+          "description": "Escape to a tropical paradise with the creamy coconut flavor of this cappuccino.",
+          "imageUrl": "https://source.unsplash.com/600x600/?cappuccino",
+          "price": 5.49,
+          "rating": 4.8,
+          "voteCount": 130,
+          "isLiked": false
+        },
+        {
+          "title": "Irish Cream",
+          "subTitle": "Rich & Creamy",
+          "description": "Indulge in the luxurious flavor of Irish cream liqueur combined with frothy cappuccino.",
+          "imageUrl": "https://source.unsplash.com/600x600/?cappuccino",
+          "price": 5.99,
+          "rating": 4.9,
+          "voteCount": 150,
+          "isLiked": true
+        },
+        {
+          "title": "Almond",
+          "subTitle": "Nutty Bliss",
+          "description": "Experience the delightful combination of almond flavor and frothy cappuccino.",
+          "imageUrl": "https://source.unsplash.com/600x600/?cappuccino",
+          "price": 6.29,
+          "rating": 4.6,
+          "voteCount": 115,
+          "isLiked": false
+        },
+        {
+          "title": "Matcha",
+          "subTitle": "Zen & Green",
+          "description": "Find your moment of zen with the earthy goodness of matcha blended into frothy cappuccino.",
+          "imageUrl": "https://source.unsplash.com/600x600/?cappuccino",
+          "price": 6.79,
+          "rating": 4.3,
+          "voteCount": 105,
+          "isLiked": true
+        },
+        {
+          "title": "White Chocolate",
+          "subTitle": "Sweet & Creamy",
+          "description": "Delight in the creamy sweetness of white chocolate combined with frothy cappuccino foam.",
+          "imageUrl": "https://source.unsplash.com/600x600/?cappuccino",
+          "price": 7.49,
+          "rating": 4.7,
+          "voteCount": 125,
+          "isLiked": false
+        }
+      ],
+      "latte":[
+        {
+          "title": "Classic",
+          "subTitle": "Smooth & Creamy",
+          "description": "Indulge in the velvety texture of steamed milk and espresso.",
+          "imageUrl": "https://source.unsplash.com/600x600/?latte",
+          "price": 4.49,
+          "rating": 4.5,
+          "voteCount": 120,
+          "isLiked": true
+        },
+        {
+          "title": "Vanilla",
+          "subTitle": "Sweet & Fragrant",
+          "description": "Experience the delicate flavor of vanilla infused into creamy latte.",
+          "imageUrl": "https://source.unsplash.com/600x600/?latte",
+          "price": 4.99,
+          "rating": 4.7,
+          "voteCount": 95,
+          "isLiked": false
+        },
+        {
+          "title": "Caramel",
+          "subTitle": "Buttery & Smooth",
+          "description": "Indulge in the buttery sweetness of caramel swirled into a latte.",
+          "imageUrl": "https://source.unsplash.com/600x600/?latte",
+          "price": 5.29,
+          "rating": 4.6,
+          "voteCount": 110,
+          "isLiked": true
+        },
+        {
+          "title": "Hazelnut",
+          "subTitle": "Nutty & Rich",
+          "description": "Savor the rich nuttiness of hazelnut blended with creamy latte.",
+          "imageUrl": "https://source.unsplash.com/600x600/?latte",
+          "price": 5.49,
+          "rating": 4.4,
+          "voteCount": 85,
+          "isLiked": false
+        },
+        {
+          "title": "Pumpkin Spice",
+          "subTitle": "Fall Favorite",
+          "description": "Celebrate the flavors of fall with pumpkin spice infused latte.",
+          "imageUrl": "https://source.unsplash.com/600x600/?latte",
+          "price": 5.99,
+          "rating": 4.3,
+          "voteCount": 100,
+          "isLiked": true
+        },
+        {
+          "title": "Coconut",
+          "subTitle": "Tropical Escape",
+          "description": "Escape to a tropical paradise with coconut flavored latte.",
+          "imageUrl": "https://source.unsplash.com/600x600/?latte",
+          "price": 6.49,
+          "rating": 4.8,
+          "voteCount": 130,
+          "isLiked": false
+        },
+        {
+          "title": "Irish Cream",
+          "subTitle": "Rich & Creamy",
+          "description": "Indulge in the luxurious flavor of Irish cream swirled into latte.",
+          "imageUrl": "https://source.unsplash.com/600x600/?latte",
+          "price": 6.99,
+          "rating": 4.9,
+          "voteCount": 150,
+          "isLiked": true
+        },
+        {
+          "title": "Almond",
+          "subTitle": "Nutty Bliss",
+          "description": "Experience the delightful combination of almond flavor and creamy latte.",
+          "imageUrl": "https://source.unsplash.com/600x600/?latte",
+          "price": 7.29,
+          "rating": 4.6,
+          "voteCount": 115,
+          "isLiked": false
+        },
+        {
+          "title": "Matcha",
+          "subTitle": "Zen & Green",
+          "description": "Find your moment of zen with the earthy goodness of matcha blended into latte.",
+          "imageUrl": "https://source.unsplash.com/600x600/?latte",
+          "price": 7.99,
+          "rating": 4.3,
+          "voteCount": 105,
+          "isLiked": true
+        },
+        {
+          "title": "Chocolate Hazelnut",
+          "subTitle": "Decadent Duo",
+          "description": "Indulge in the decadent combination of chocolate and hazelnut in creamy latte.",
+          "imageUrl": "https://source.unsplash.com/600x600/?latte",
+          "price": 8.49,
+          "rating": 4.7,
+          "voteCount": 125,
+          "isLiked": false
+        }
+      ],
+
+      "espresso":[
+        {
+          "title": "Classic Shot",
+          "subTitle": "Intense and Bold",
+          "description": "Experience the pure essence of coffee with our classic espresso shot.",
+          "imageUrl": "https://source.unsplash.com/600x600/?espresso",
+          "price": 2.99,
+          "rating": 4.5,
+          "voteCount": 120,
+          "isLiked": true
+        },
+        {
+          "title": "Double",
+          "subTitle": "Twice the Intensity",
+          "description": "For those who crave an extra kick, our double espresso offers double the intensity and flavor.",
+          "imageUrl": "https://source.unsplash.com/600x600/?double-espresso",
+          "price": 3.50,
+          "rating": 4.7,
+          "voteCount": 150,
+          "isLiked": false
+        },
+        {
+          "title": "Macchiato",
+          "subTitle": "Espresso 'Stained' with a Dash of Milk",
+          "description": "Enjoy the perfect balance of espresso and milk in our espresso macchiato, a delightful treat for espresso lovers.",
+          "imageUrl": "https://source.unsplash.com/600x600/?espresso-macchiato",
+          "price": 3.75,
+          "rating": 4.6,
+          "voteCount": 130,
+          "isLiked": true
+        },
+        {
+          "title": "Iced",
+          "subTitle": "Chilled Espresso Perfection",
+          "description": "Cool down with our refreshing iced espresso, perfect for those hot summer days.",
+          "imageUrl": "https://source.unsplash.com/600x600/?iced-espresso",
+          "price": 4.25,
+          "rating": 4.8,
+          "voteCount": 160,
+          "isLiked": false
+        },
+        {
+          "title": "Con Panna",
+          "subTitle": "Espresso Topped with Whipped Cream",
+          "description": "Indulge in the richness of our espresso con panna, topped with a dollop of freshly whipped cream.",
+          "imageUrl": "https://source.unsplash.com/600x600/?espresso-con-panna",
+          "price": 4.50,
+          "rating": 4.9,
+          "voteCount": 170,
+          "isLiked": true
+        },
+        {
+          "title": "Romano",
+          "subTitle": "Espresso with a Twist of Lemon",
+          "description": "Experience a unique flavor combination with our espresso romano, featuring a refreshing twist of lemon.",
+          "imageUrl": "https://source.unsplash.com/600x600/?espresso-romano",
+          "price": 4.00,
+          "rating": 4.7,
+          "voteCount": 140,
+          "isLiked": false
+        },
+        {
+          "title": "Lungo",
+          "subTitle": "Longer Brewed Espresso",
+          "description": "Savor the smoothness of our espresso lungo, brewed slightly longer for a milder flavor profile.",
+          "imageUrl": "https://source.unsplash.com/600x600/?espresso-lungo",
+          "price": 3.99,
+          "rating": 4.6,
+          "voteCount": 150,
+          "isLiked": true
+        },
+        {
+          "title": "Affogato",
+          "subTitle": "Espresso 'Drowned' in Gelato",
+          "description": "Indulge in the delightful combination of espresso and gelato with our espresso affogato.",
+          "imageUrl": "https://source.unsplash.com/600x600/?espresso-affogato",
+          "price": 5.25,
+          "rating": 4.8,
+          "voteCount": 180,
+          "isLiked": false
+        },
+        {
+          "title": "Martini",
+          "subTitle": "Espresso Cocktail with Vodka",
+          "description": "Unwind with our sophisticated espresso martini, a perfect blend of espresso and vodka for a refreshing cocktail experience.",
+          "imageUrl": "https://source.unsplash.com/600x600/?espresso-martini",
+          "price": 7.50,
+          "rating": 4.9,
+          "voteCount": 200,
+          "isLiked": true
+        },
+        {
+          "title": "Tonic",
+          "subTitle": "Espresso with Tonic Water",
+          "description": "Discover a unique flavor combination with our espresso tonic, featuring the bitterness of espresso paired with the effervescence of tonic water.",
+          "imageUrl": "https://source.unsplash.com/600x600/?espresso-tonic",
+          "price": 4.75,
+          "rating": 4.7,
+          "voteCount": 170,
+          "isLiked": false
+        }
+      ],
+      "turkish":[
+        {
+          "title": "Traditional",
+          "subTitle": "Rich and Aromatic",
+          "description": "Experience the rich tradition of Turkish coffee with its intense flavor and unique brewing method.",
+          "imageUrl": "https://source.unsplash.com/600x600/?turkish-coffee",
+          "price": 3.99,
+          "rating": 4.5,
+          "voteCount": 120,
+          "isLiked": true
+        },
+        {
+          "title": "Cardamom ",
+          "subTitle": "Infused with Fragrant Cardamom",
+          "description": "Indulge in the exotic flavors of our cardamom-infused Turkish coffee, featuring a blend of aromatic spices.",
+          "imageUrl": "https://source.unsplash.com/600x600/?cardamom-turkish-coffee",
+          "price": 4.50,
+          "rating": 4.7,
+          "voteCount": 150,
+          "isLiked": false
+        },
+        {
+          "title": "Chocolate ",
+          "subTitle": "Rich and Decadent",
+          "description": "Satisfy your sweet cravings with our indulgent chocolate Turkish coffee, featuring a rich blend of coffee and chocolate.",
+          "imageUrl": "https://source.unsplash.com/600x600/?chocolate-turkish-coffee",
+          "price": 4.25,
+          "rating": 4.6,
+          "voteCount": 130,
+          "isLiked": true
+        },
+        {
+          "title": "Rose",
+          "subTitle": "Infused with Fragrant Rose Water",
+          "description": "Transport yourself to a garden of roses with our floral-infused rose Turkish coffee, featuring a delicate blend of coffee and rose water.",
+          "imageUrl": "https://source.unsplash.com/600x600/?rose-turkish-coffee",
+          "price": 4.75,
+          "rating": 4.8,
+          "voteCount": 160,
+          "isLiked": false
+        },
+        {
+          "title": "Almond",
+          "subTitle": "Nutty and Rich",
+          "description": "Indulge in the nutty goodness of our almond Turkish coffee, featuring a rich blend of coffee and almond flavor.",
+          "imageUrl": "https://source.unsplash.com/600x600/?almond-turkish-coffee",
+          "price": 4.50,
+          "rating": 4.9,
+          "voteCount": 170,
+          "isLiked": true
+        },
+        {
+          "title": "Coconut",
+          "subTitle": "Creamy and Tropical",
+          "description": "Escape to the tropics with our creamy coconut Turkish coffee, featuring a rich blend of coffee and coconut flavor.",
+          "imageUrl": "https://source.unsplash.com/600x600/?coconut-turkish-coffee",
+          "price": 4.99,
+          "rating": 4.7,
+          "voteCount": 180,
+          "isLiked": false
+        },
+        {
+          "title": "Honey",
+          "subTitle": "Sweetened with Natural Honey",
+          "description": "Enjoy the natural sweetness of our honey Turkish coffee, featuring a blend of coffee and pure honey.",
+          "imageUrl": "https://source.unsplash.com/600x600/?honey-turkish-coffee",
+          "price": 5.25,
+          "rating": 4.8,
+          "voteCount": 190,
+          "isLiked": true
+        },
+        {
+          "title": "Spiced",
+          "subTitle": "Infused with Warm Spices",
+          "description": "Warm up your senses with our spiced Turkish coffee, featuring a blend of coffee and aromatic spices.",
+          "imageUrl": "https://source.unsplash.com/600x600/?spiced-turkish-coffee",
+          "price": 5.50,
+          "rating": 4.9,
+          "voteCount": 200,
+          "isLiked": true
+        },
+        {
+          "title": "Mint",
+          "subTitle": "Refreshing and Aromatic",
+          "description": "Experience a burst of freshness with our mint-infused Turkish coffee, featuring a blend of coffee and refreshing mint flavor.",
+          "imageUrl": "https://source.unsplash.com/600x600/?mint-turkish-coffee",
+          "price": 5.75,
+          "rating": 4.8,
+          "voteCount": 210,
+          "isLiked": false
+        },
+        {
+          "title": "Orange",
+          "subTitle": "Citrusy and Vibrant",
+          "description": "Awaken your taste buds with our citrusy orange Turkish coffee, featuring a blend of coffee and zesty orange flavor.",
+          "imageUrl": "https://source.unsplash.com/600x600/?orange-turkish-coffee",
+          "price": 5.99,
+          "rating": 4.7,
+          "voteCount": 220,
+          "isLiked": true
+        }
+      ],
+
+      "americano":[
+        {
+          "title": "Classic",
+          "subTitle": "Double Shot Espresso",
+          "description": "Enjoy the bold and rich flavor of our classic Americano made with a double shot of espresso and hot water.",
+          "imageUrl": "https://source.unsplash.com/600x600/?americano",
+          "price": 3.99,
+          "rating": 4.5,
+          "voteCount": 120,
+          "isLiked": true
+        },
+        {
+          "title": "Iced",
+          "subTitle": "Chilled Double Shot Espresso",
+          "description": "Cool down with our refreshing iced Americano made with a double shot of espresso poured over ice.",
+          "imageUrl": "https://source.unsplash.com/600x600/?iced-americano",
+          "price": 4.50,
+          "rating": 4.7,
+          "voteCount": 150,
+          "isLiked": false
+        },
+        {
+          "title": "Vanilla",
+          "subTitle": "Double Shot Espresso with Vanilla Syrup",
+          "description": "Indulge in the smooth sweetness of our vanilla Americano made with a double shot of espresso and fragrant vanilla syrup.",
+          "imageUrl": "https://source.unsplash.com/600x600/?vanilla-americano",
+          "price": 4.25,
+          "rating": 4.6,
+          "voteCount": 130,
+          "isLiked": true
+        },
+        {
+          "title": "Mocha",
+          "subTitle": "Double Shot Espresso with Chocolate Syrup",
+          "description": "Satisfy your chocolate cravings with our indulgent mocha Americano made with a double shot of espresso and rich chocolate syrup.",
+          "imageUrl": "https://source.unsplash.com/600x600/?mocha-americano",
+          "price": 4.75,
+          "rating": 4.8,
+          "voteCount": 160,
+          "isLiked": false
+        },
+        {
+          "title": "Caramel",
+          "subTitle": "Double Shot Espresso with Caramel Syrup",
+          "description": "Treat yourself to the sweet indulgence of our caramel Americano made with a double shot of espresso and luscious caramel syrup.",
+          "imageUrl": "https://source.unsplash.com/600x600/?caramel-americano",
+          "price": 4.50,
+          "rating": 4.9,
+          "voteCount": 170,
+          "isLiked": true
+        },
+        {
+          "title": "Hazelnut",
+          "subTitle": "Double Shot Espresso with Hazelnut Syrup",
+          "description": "Experience the nutty richness of our hazelnut Americano made with a double shot of espresso and decadent hazelnut syrup.",
+          "imageUrl": "https://source.unsplash.com/600x600/?hazelnut-americano",
+          "price": 4.99,
+          "rating": 4.7,
+          "voteCount": 180,
+          "isLiked": false
+        },
+        {
+          "title": "Coconut",
+          "subTitle": "Double Shot Espresso with Coconut Syrup",
+          "description": "Escape to the tropics with our coconut Americano made with a double shot of espresso and creamy coconut syrup.",
+          "imageUrl": "https://source.unsplash.com/600x600/?coconut-americano",
+          "price": 5.25,
+          "rating": 4.8,
+          "voteCount": 190,
+          "isLiked": true
+        },
+        {
+          "title": "Almond",
+          "subTitle": "Double Shot Espresso with Almond Syrup",
+          "description": "Indulge in the nutty goodness of our almond Americano made with a double shot of espresso and smooth almond syrup.",
+          "imageUrl": "https://source.unsplash.com/600x600/?almond-americano",
+          "price": 5.50,
+          "rating": 4.9,
+          "voteCount": 200,
+          "isLiked": true
+        },
+        {
+          "title": "Pumpkin",
+          "subTitle": "Double Shot Espresso with Pumpkin Spice Syrup",
+          "description": "Embrace the flavors of the season with our pumpkin spice Americano made with a double shot of espresso and warm pumpkin spice syrup.",
+          "imageUrl": "https://source.unsplash.com/600x600/?pumpkin-spice-americano",
+          "price": 5.75,
+          "rating": 4.8,
+          "voteCount": 210,
+          "isLiked": false
+        },
+        {
+          "title": "Toffee Nut",
+          "subTitle": "Double Shot Espresso with Toffee Nut Syrup",
+          "description": "Delight in the sweet indulgence of our toffee nut Americano made with a double shot of espresso and buttery toffee nut syrup.",
+          "imageUrl": "https://source.unsplash.com/600x600/?toffee-nut-americano",
+          "price": 5.99,
+          "rating": 4.7,
+          "voteCount": 220,
+          "isLiked": true
+        }
+      ],
+      "mocha":[
+        {
+          "title": "Classic",
+          "subTitle": "Espresso with Chocolate and Steamed Milk",
+          "description": "Indulge in the timeless combination of rich espresso, velvety steamed milk, and decadent chocolate.",
+          "imageUrl": "https://source.unsplash.com/600x600/?mocha",
+          "price": 4.50,
+          "rating": 4.5,
+          "voteCount": 120,
+          "isLiked": true
+        },
+        {
+          "title": "Iced",
+          "subTitle": "Chilled Espresso with Chocolate and Milk",
+          "description": "Cool down with our refreshing iced mocha, featuring espresso blended with creamy milk and chocolate over ice.",
+          "imageUrl": "https://source.unsplash.com/600x600/?iced-mocha",
+          "price": 4.75,
+          "rating": 4.7,
+          "voteCount": 150,
+          "isLiked": false
+        },
+        {
+          "title": "White",
+          "subTitle": "Espresso with White Chocolate and Steamed Milk",
+          "description": "Experience the luxurious sweetness of our white mocha, featuring espresso infused with creamy white chocolate and steamed milk.",
+          "imageUrl": "https://source.unsplash.com/600x600/?white-mocha",
+          "price": 5.25,
+          "rating": 4.6,
+          "voteCount": 130,
+          "isLiked": true
+        },
+        {
+          "title": "Caramel",
+          "subTitle": "Espresso with Caramel and Chocolate Drizzle",
+          "description": "Satisfy your sweet cravings with our indulgent caramel mocha, featuring espresso blended with caramel syrup, chocolate drizzle, and steamed milk.",
+          "imageUrl": "https://source.unsplash.com/600x600/?caramel-mocha",
+          "price": 5.00,
+          "rating": 4.8,
+          "voteCount": 160,
+          "isLiked": false
+        },
+        {
+          "title": "Hazelnut",
+          "subTitle": "Espresso with Hazelnut and Chocolate",
+          "description": "Delight in the nutty richness of our hazelnut mocha, featuring espresso infused with hazelnut syrup and decadent chocolate.",
+          "imageUrl": "https://source.unsplash.com/600x600/?hazelnut-mocha",
+          "price": 5.50,
+          "rating": 4.9,
+          "voteCount": 170,
+          "isLiked": true
+        },
+        {
+          "title": "Peppermint",
+          "subTitle": "Espresso with Peppermint and Chocolate",
+          "description": "Embrace the holiday spirit with our festive peppermint mocha, featuring espresso blended with refreshing peppermint syrup and rich chocolate.",
+          "imageUrl": "https://source.unsplash.com/600x600/?peppermint-mocha",
+          "price": 5.75,
+          "rating": 4.7,
+          "voteCount": 180,
+          "isLiked": false
+        },
+        {
+          "title": "Coconut",
+          "subTitle": "Espresso with Coconut and Chocolate",
+          "description": "Escape to the tropics with our indulgent coconut mocha, featuring espresso infused with creamy coconut syrup and decadent chocolate.",
+          "imageUrl": "https://source.unsplash.com/600x600/?coconut-mocha",
+          "price": 5.99,
+          "rating": 4.8,
+          "voteCount": 190,
+          "isLiked": true
+        },
+        {
+          "title": "Toffee Nut",
+          "subTitle": "Espresso with Toffee Nut and Chocolate",
+          "description": "Indulge in the buttery sweetness of our toffee nut mocha, featuring espresso blended with rich toffee nut syrup and decadent chocolate.",
+          "imageUrl": "https://source.unsplash.com/600x600/?toffee-nut-mocha",
+          "price": 6.25,
+          "rating": 4.9,
+          "voteCount": 200,
+          "isLiked": true
+        },
+        {
+          "title": "Almond",
+          "subTitle": "Espresso with Almond and Chocolate",
+          "description": "Experience the nutty delight of our almond mocha, featuring espresso infused with smooth almond syrup and decadent chocolate.",
+          "imageUrl": "https://source.unsplash.com/600x600/?almond-mocha",
+          "price": 5.50,
+          "rating": 4.7,
+          "voteCount": 210,
+          "isLiked": false
+        },
+        {
+          "title": "Salted Caramel",
+          "subTitle": "Espresso with Salted Caramel and Chocolate",
+          "description": "Indulge in the perfect balance of sweet and salty with our salted caramel mocha, featuring espresso blended with salted caramel syrup and decadent chocolate.",
+          "imageUrl": "https://source.unsplash.com/600x600/?salted-caramel-mocha",
+          "price": 6.50,
+          "rating": 4.8,
+          "voteCount": 220,
+          "isLiked": true
+        }
+      ],
+      "machiato":[
+        {
+          "title": "Classic",
+          "subTitle": "Espresso 'Stained' with a Dash of Milk",
+          "description": "Savor the simplicity of our classic espresso macchiato, featuring a perfectly balanced ratio of espresso and steamed milk.",
+          "imageUrl": "https://source.unsplash.com/600x600/?espresso-macchiato",
+          "price": 3.99,
+          "rating": 4.5,
+          "voteCount": 120,
+          "isLiked": true
+        },
+        {
+          "title": "Caramel",
+          "subTitle": "Espresso with Caramel Drizzle",
+          "description": "Indulge in the sweet decadence of our caramel macchiato, featuring rich espresso topped with velvety milk and a caramel drizzle.",
+          "imageUrl": "https://source.unsplash.com/600x600/?caramel-macchiato",
+          "price": 4.50,
+          "rating": 4.7,
+          "voteCount": 150,
+          "isLiked": false
+        },
+        {
+          "title": "Vanilla",
+          "subTitle": "Espresso with Vanilla Syrup",
+          "description": "Experience the smooth sweetness of our vanilla macchiato, featuring espresso infused with fragrant vanilla syrup and topped with frothy milk.",
+          "imageUrl": "https://source.unsplash.com/600x600/?vanilla-macchiato",
+          "price": 4.25,
+          "rating": 4.6,
+          "voteCount": 130,
+          "isLiked": true
+        },
+        {
+          "title": "Hazelnut",
+          "subTitle": "Espresso with Hazelnut Drizzle",
+          "description": "Delight in the nutty richness of our hazelnut macchiato, featuring espresso adorned with a hazelnut drizzle and steamed milk.",
+          "imageUrl": "https://source.unsplash.com/600x600/?hazelnut-macchiato",
+          "price": 4.75,
+          "rating": 4.8,
+          "voteCount": 160,
+          "isLiked": false
+        },
+        {
+          "title": "Cinnamon",
+          "subTitle": "Espresso with Cinnamon Powder",
+          "description": "Warm up with our comforting cinnamon macchiato, featuring espresso dusted with fragrant cinnamon powder and topped with steamed milk.",
+          "imageUrl": "https://source.unsplash.com/600x600/?cinnamon-macchiato",
+          "price": 4.50,
+          "rating": 4.9,
+          "voteCount": 170,
+          "isLiked": true
+        },
+        {
+          "title": "Coconut",
+          "subTitle": "Espresso with Coconut Milk",
+          "description": "Escape to the tropics with our creamy coconut macchiato, made with rich espresso and velvety coconut milk.",
+          "imageUrl": "https://source.unsplash.com/600x600/?coconut-macchiato",
+          "price": 5.25,
+          "rating": 4.7,
+          "voteCount": 180,
+          "isLiked": false
+        },
+        {
+          "title": "Almond",
+          "subTitle": "Espresso with Almond Milk",
+          "description": "Enjoy the nutty richness of our almond macchiato, made with espresso and creamy almond milk.",
+          "imageUrl": "https://source.unsplash.com/600x600/?almond-macchiato",
+          "price": 5.50,
+          "rating": 4.8,
+          "voteCount": 190,
+          "isLiked": true
+        },
+        {
+          "title": "Cocoa",
+          "subTitle": "Espresso with Cocoa Powder",
+          "description": "Indulge in the rich chocolatey goodness of our cocoa macchiato, featuring espresso dusted with cocoa powder and topped with steamed milk.",
+          "imageUrl": "https://source.unsplash.com/600x600/?cocoa-macchiato",
+          "price": 5.75,
+          "rating": 4.9,
+          "voteCount": 200,
+          "isLiked": true
+        },
+        {
+          "title": "Maple",
+          "subTitle": "Espresso with Maple Syrup",
+          "description": "Experience the sweet and earthy flavors of our maple macchiato, featuring espresso infused with pure maple syrup and topped with frothy milk.",
+          "imageUrl": "https://source.unsplash.com/600x600/?maple-macchiato",
+          "price": 6.00,
+          "rating": 4.8,
+          "voteCount": 210,
+          "isLiked": false
+        },
+        {
+          "title": "Gingerbread",
+          "subTitle": "Espresso with Gingerbread Spice",
+          "description": "Get into the holiday spirit with our festive gingerbread macchiato, featuring espresso infused with warm gingerbread spices and topped with steamed milk.",
+          "imageUrl": "https://source.unsplash.com/600x600/?gingerbread-macchiato",
+          "price": 6.25,
+          "rating": 4.7,
+          "voteCount": 220,
+          "isLiked": true
+        }
+      ] 
+}
