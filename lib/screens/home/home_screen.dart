@@ -2,6 +2,7 @@ import 'package:cofee_delivery_app/screens/home/widgets/home_app_bar.dart';
 import 'package:cofee_delivery_app/screens/home/widgets/home_body.dart';
 import 'package:flutter/material.dart';
 
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -45,9 +46,9 @@ class _HomeScreenState extends State<HomeScreen> {
             //   activeScreen = value;
             // });
 
-            // if (value == 1) {
+            // if (value == 2) {
             //   Navigator.of(context).push(MaterialPageRoute(
-            //     builder: (context) => const DetailScreen(),
+            //     builder: (context) =>  DetailScreen(product: ,),
             //   ));
             // }
           },
@@ -67,3 +68,5 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
+
