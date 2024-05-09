@@ -3,13 +3,26 @@
 import 'package:cofee_delivery_app/model/coffee_model.dart';
 import 'package:cofee_delivery_app/model/coffee_size_enum.dart';
 import 'package:cofee_delivery_app/screens/detail/widgets/detail_app_bar.dart';
+import 'package:cofee_delivery_app/screens/order/order_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:readmore/readmore.dart';
 
-class DetailScreen extends StatelessWidget {
+import '../../widgets/main_button_widget.dart';
+import 'widgets/coffee_sizes_button_widget.dart';
+
+class DetailScreen extends StatefulWidget {
   final CoffeeModel product;
-  const DetailScreen({super.key, required this.product});
+  const DetailScreen({
+    super.key,
+    required this.product,
+  });
+
+  @override
+  State<DetailScreen> createState() => _DetailScreenState();
+}
+
+class _DetailScreenState extends State<DetailScreen> {
+  int activeButton = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +41,7 @@ class DetailScreen extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(16),
                   child: Image.network(
-                    product.imageUrl.toString(),
+                    widget.product.imageUrl.toString(),
                     width: double.infinity,
                     height: 250,
                     fit: BoxFit.fitWidth,
@@ -41,14 +54,14 @@ class DetailScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        product.title.toString(),
+                        widget.product.title.toString(),
                         style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
                       Text(
-                        product.subTitle.toString(),
+                        widget.product.subTitle.toString(),
                         style: TextStyle(
                           fontSize: 15,
                           color: Color(0xff9B9B9B),
@@ -59,12 +72,12 @@ class DetailScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "⭐${product.rating}",
+                            "⭐${widget.product.rating}",
                             style: TextStyle(
                                 fontSize: 20, fontWeight: FontWeight.bold),
                           ),
                           Text(
-                            " (${product.voteCount})",
+                            " (${widget.product.voteCount})",
                             style: TextStyle(
                               fontSize: 20,
                               color: Colors.grey,
@@ -108,7 +121,7 @@ class DetailScreen extends StatelessWidget {
                         ),
                       ),
                       ReadMoreText(
-                        "${product.description}",
+                        "${widget.product.description}",
                         trimMode: TrimMode.Line,
                         trimLines: 1,
                         colorClickableText: Color(0xffC67C4E),
@@ -131,18 +144,36 @@ class DetailScreen extends StatelessWidget {
                       Row(
                         children: [
                           CoffeeSizesButtonwidget(
+                            isSelected: activeButton == 0,
+                            onTap: () {
+                              setState(() {
+                                activeButton = 0;
+                              });
+                            },
                             size: CoffeeSizes.S
                                 .toString()
                                 .split("CoffeeSizes.")
                                 .join(),
                           ),
                           CoffeeSizesButtonwidget(
+                            isSelected: activeButton == 1,
+                            onTap: () {
+                              setState(() {
+                                activeButton = 1;
+                              });
+                            },
                             size: CoffeeSizes.M
                                 .toString()
                                 .split("CoffeeSizes.")
                                 .join(),
                           ),
                           CoffeeSizesButtonwidget(
+                            isSelected: activeButton == 2,
+                            onTap: () {
+                              setState(() {
+                                activeButton = 2;
+                              });
+                            },
                             size: CoffeeSizes.L
                                 .toString()
                                 .split("CoffeeSizes.")
@@ -192,7 +223,7 @@ class DetailScreen extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "\$ ${product.price}",
+                    "\$ ${activeButton == 0 ? widget.product.price : activeButton == 1 ? widget.product.price! + 4 : widget.product.price! + 6}",
                     style: TextStyle(
                         fontSize: 20,
                         color: Color(0xffC67C4E),
@@ -200,31 +231,21 @@ class DetailScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              Container(
-                width: 100,
-                height: 100,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(40))
-                ),
-                child: ElevatedButton(
-                  style: ButtonStyle(
-                    
-                    backgroundColor: MaterialStatePropertyAll(
-                      Color(0xffC67C4E),
+              MainButtonWidget(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return OrderScreen(product: widget.product);
+                      },
                     ),
-                    padding: MaterialStatePropertyAll(
-                      EdgeInsets.symmetric(
-                        horizontal: 80,
-                        vertical: 20,
-                      ),
-                    ),
-                  ),
-                  onPressed: () {},
-                  child: Text(
-                    "Buy Now",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
+                  );
+                },
+                color: Color(0xffC67C4E),
+                buttontext: "Buy Now",
+                height: 20,
+                width: 200,
               ),
             ],
           ),
@@ -233,53 +254,3 @@ class DetailScreen extends StatelessWidget {
     );
   }
 }
-
-class CoffeeSizesButtonwidget extends StatelessWidget {
-  final String size;
-  const CoffeeSizesButtonwidget({
-    super.key,
-    required this.size,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.all(5),
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 2),
-      decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey),
-        borderRadius: BorderRadius.all(
-          Radius.circular(20),
-        ),
-      ),
-      child: TextButton(
-        onPressed: () {},
-        child: Text(
-          size,
-          style: TextStyle(
-            color: Colors.black,
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-// Future<CoffeeModel?>?getDetailProducts() async {
-//   var url = 'https://www.jsonkeeper.com/b/S7ET';
-//   Dio currentDio = Dio();
-//   Response response = await currentDio.get(url);
-
-//   try {
-//     if (response.statusCode == 200) {
-       
-//       MainModel coffeeModel = MainModel.fromJson(response.data);
-//     }
-//   } catch (e) {
-//     print("server error $e");
-//   }
-//   return null;
-// }
-
-
-

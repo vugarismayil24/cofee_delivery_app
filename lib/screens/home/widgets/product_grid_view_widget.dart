@@ -5,7 +5,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class ProductsGridViewWidget extends StatelessWidget {
-  String activeCategory;
+  late String activeCategory;
   ProductsGridViewWidget({super.key, required this.activeCategory});
 
   @override

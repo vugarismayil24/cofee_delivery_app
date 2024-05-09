@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
           unselectedItemColor: const Color(0xff8D8D8D),
           iconSize: 32,
           currentIndex: activeScreen,
-          onTap: (value) {
+          onTap: (value) { 
             // setState(() {
             //   activeScreen = value;
             // });
