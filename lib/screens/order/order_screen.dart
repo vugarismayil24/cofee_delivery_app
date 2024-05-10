@@ -3,6 +3,7 @@
 import 'package:cofee_delivery_app/widgets/main_button_widget.dart';
 import 'package:cofee_delivery_app/screens/order/widgets/swicth_button_wiget.dart';
 import 'package:flutter/material.dart';
+import 'package:toggle_switch/toggle_switch.dart';
 
 import '../../model/coffee_model.dart';
 
@@ -51,7 +52,22 @@ class _OrderScreenState extends State<OrderScreen> {
                   Radius.circular(14),
                 ),
               ),
-              child: SwicthButtonWidget(),
+              child: ToggleSwitch(
+                minWidth: 160.0,
+                cornerRadius: 20.0,
+                activeBgColors: [
+                  [Color(0xffC67C4E)],
+                  [Color(0xffC67C4E)]
+                ],
+                activeFgColor: Colors.white,
+                inactiveBgColor: Color(0xffF2F2F2),
+                inactiveFgColor: Color(0xff000000),
+                initialLabelIndex: 0,
+                totalSwitches: 2,
+                labels: ['Deliver', 'Pick Up'],
+                radiusStyle: true,
+                
+              ),
             ),
             SizedBox(
               height: 24,
@@ -283,10 +299,9 @@ class _OrderScreenState extends State<OrderScreen> {
                         Text(
                           "\$2.0",
                           style: TextStyle(
-                            fontSize: 14,
-                            decoration: TextDecoration.lineThrough),
-                          ),
-                        
+                              fontSize: 14,
+                              decoration: TextDecoration.lineThrough),
+                        ),
                         SizedBox(
                           width: 10,
                         ),
@@ -401,7 +416,7 @@ class _OrderScreenState extends State<OrderScreen> {
                 width: 345,
                 height: 60,
                 margin: EdgeInsets.only(top: 20),
-                padding: EdgeInsets.only(left: 160),
+                padding: EdgeInsets.only(left: 150),
                 decoration: BoxDecoration(
                   color: Color(0xffC67C4E),
                   borderRadius: BorderRadius.circular(20),
