@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 
 class MainButtonWidget extends StatelessWidget {
   final Color? color;
-  final String buttontext;
+  final String? buttontext;
   final double width;
   final double height;
   final Function() onTap;
   const MainButtonWidget({
     super.key,
-    required this.buttontext,
+    this.buttontext,
     required this.width,
     required this.height,
     required this.onTap,
@@ -26,9 +26,11 @@ class MainButtonWidget extends StatelessWidget {
         height: height,
         decoration: const BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(10))),
-        child: Text(
-          buttontext,
-          style: TextStyle(color: color),
+        child: Center(
+          child: Text(
+            buttontext ?? "Null",
+            style: TextStyle(color: color),
+          ),
         ),
       ),
     );

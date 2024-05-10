@@ -231,21 +231,29 @@ class _DetailScreenState extends State<DetailScreen> {
                   ),
                 ],
               ),
-              MainButtonWidget(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) {
-                        return OrderScreen(product: widget.product);
-                      },
-                    ),
-                  );
-                },
+              Container(
+                
+                padding: EdgeInsets.symmetric(horizontal: 50,vertical: 20),
+                decoration: BoxDecoration(
                 color: Color(0xffC67C4E),
-                buttontext: "Buy Now",
-                height: 20,
-                width: 200,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: MainButtonWidget(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return OrderScreen(product: widget.product);
+                        },
+                      ),
+                    );
+                  },
+                  color: Colors.white,
+                  buttontext: "Buy Now",
+                  height: 20,
+                  width: 120,
+                ),
               ),
             ],
           ),

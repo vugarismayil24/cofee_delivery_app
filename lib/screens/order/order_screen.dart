@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 import '../../model/coffee_model.dart';
 
-class OrderScreen extends StatelessWidget {
+class OrderScreen extends StatefulWidget {
   final CoffeeModel product;
 
   const OrderScreen({
@@ -14,6 +14,11 @@ class OrderScreen extends StatelessWidget {
     required this.product,
   });
 
+  @override
+  State<OrderScreen> createState() => _OrderScreenState();
+}
+
+class _OrderScreenState extends State<OrderScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -180,7 +185,7 @@ class OrderScreen extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.all(Radius.circular(12)),
                       child: Image.network(
-                        "${product.imageUrl}",
+                        "${widget.product.imageUrl}",
                         fit: BoxFit.cover,
                         height: 54,
                         width: 54,
@@ -193,13 +198,13 @@ class OrderScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "${product.title}",
+                          "${widget.product.title}",
                         ),
                         SizedBox(
                           height: 4,
                         ),
                         Text(
-                          "${product.subTitle}",
+                          "${widget.product.subTitle}",
                           style: TextStyle(color: Colors.grey),
                         ),
                       ],
@@ -222,6 +227,7 @@ class OrderScreen extends StatelessWidget {
                       height: 50,
                       decoration: BoxDecoration(
                         color: Colors.white,
+                        border: Border.all(strokeAlign: 1, color: Colors.grey),
                         borderRadius: BorderRadius.all(Radius.circular(14)),
                       ),
                       child: Padding(
@@ -260,7 +266,7 @@ class OrderScreen extends StatelessWidget {
                       children: [
                         Text("Price"),
                         Text(
-                          "${product.price}",
+                          "${widget.product.price}",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
@@ -275,11 +281,12 @@ class OrderScreen extends StatelessWidget {
                         Text("Delivery fee"),
                         Spacer(),
                         Text(
-                          "\$ ̶2̶.̶0̶",
+                          "\$2.0",
                           style: TextStyle(
                             fontSize: 14,
+                            decoration: TextDecoration.lineThrough),
                           ),
-                        ),
+                        
                         SizedBox(
                           width: 10,
                         ),
@@ -300,7 +307,7 @@ class OrderScreen extends StatelessWidget {
                           "Total Payment",
                         ),
                         Text(
-                          "${product.price! + 1}",
+                          "${widget.product.price! + 1}",
                         ),
                       ],
                     ),
@@ -323,7 +330,16 @@ class OrderScreen extends StatelessWidget {
           children: [
             Row(
               children: [
-                Icon(Icons.abc),
+                SizedBox(
+                  width: 30,
+                ),
+                Icon(
+                  Icons.payments,
+                  color: Color(0xffC67C4E),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
                 Container(
                   width: 110,
                   height: 40,
@@ -356,7 +372,7 @@ class OrderScreen extends StatelessWidget {
                         width: 60,
                         height: 40,
                         child: Text(
-                          "${product.price! + 1}",
+                          "${widget.product.price! + 1}",
                           style: TextStyle(
                             color: Color(0xff2F2D2C),
                             fontSize: 16,
@@ -367,25 +383,41 @@ class OrderScreen extends StatelessWidget {
                   ),
                 ),
                 Spacer(),
-                Icon(Icons.abc),
+                CircleAvatar(
+                  backgroundColor: Color(0xff808080),
+                  child: Icon(
+                    Icons.more_horiz,
+                    color: Colors.white,
+                  ),
+                ),
+                SizedBox(
+                  width: 30,
+                ),
               ],
             ),
-            Container(
-              width: 315,
-              height: 60,
-              margin: EdgeInsets.only(top: 20),
-              padding: EdgeInsets.only(left: 160),
-              decoration: BoxDecoration(
-                color: Color(0xffC67C4E),
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: MainButtonWidget(
-                onTap: () {
-                  return null;
-                },
-                buttontext: "Order",
-                height: 62,
-                width: 315,
+            Padding(
+              padding: const EdgeInsets.only(left: 20),
+              child: Container(
+                width: 345,
+                height: 60,
+                margin: EdgeInsets.only(top: 20),
+                padding: EdgeInsets.only(left: 160),
+                decoration: BoxDecoration(
+                  color: Color(0xffC67C4E),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 140),
+                  child: MainButtonWidget(
+                    onTap: () {
+                      return null;
+                    },
+                    buttontext: "Order",
+                    color: Colors.white,
+                    height: 62,
+                    width: 315,
+                  ),
+                ),
               ),
             ),
           ],
